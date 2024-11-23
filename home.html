@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="code.js"></script> 
+    <style>
+        /* Add this CSS for the dark overlay */
+        .video-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.959); /* Adjust the opacity here (0.6 for 60% darkness) */
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="" >
+    <div><!-- content wrapper  -->      
+        <main>
+            <div class="relative w-full h-auto">
+                <video class="relative w-full z-10 filter brightness-50 bg-navy" autoplay muted loop> 
+                </video>
+                <div class="absolute w-full h-full top-0 left-0 bg-gray-900 opacity-40 z-20"></div>
+                <div class="absolute w-full h-full flex flex-col justify-center p-8 bottom-10 pl-28 z-50 text-6xl drop-shadow-lg font-mono">
+                    <div id="hello"   class="text-white font-bold">Hello👋</div>
+                    <div class="text-white">My name is</div>
+                    <div class="text-blue-400 font-bold">Muslum Abd Ali</div>
+                <nav>
+                    <ul>
+                        <li class="font-bold uppercase text-xs text-white">
+                            <a href="about.html" class="lowercase">about me</a>
+                            <a href="projects.html" class="ml-12 lowercase">projects</a>
+                            <a id="experiencescroll" class="ml-12 lowercase">experience</a>
+                            <a href="contact.html" class="ml-12 lowercase">contact</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                </div>                
+            </div>
+                
+        </main>
+
+    </div>
+
+</body>
+</html>
+
